@@ -8,7 +8,7 @@
 <div class="col-md-6">
 <ul class="list-group my-3">
   <% @cocktail.doses.each do |dose| %>
-    <li class="list-group-item my-1"><%= dose.description  %> <%= dose.ingredient.name %> <%= link_to "Delete",
+    <li class="list-group-item my-1"><%= dose.ingredient.name.capitalize %> - <%= dose.description  %> <%= link_to "Delete",
             cocktail_dose_path(@cocktail, dose),
             method: :delete,
             data: { confirm: "Are you sure?" }, class: "btn btn-danger" %></li>
