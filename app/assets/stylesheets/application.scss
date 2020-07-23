@@ -11,3 +11,29 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "cocktails";
+@import "doses";
+@import "ingredients";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(219, 219, 219);;
+}
+
+.letruski {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+i {
+  color: white;
+  font-size: 32px;
+}
+
+body {
+  background-image: url("https://image.freepik.com/foto-gratis/coctel-whisky-cola_8353-1239.jpg");
+  background-size: cover;
+  object-fit: cover;
+}
