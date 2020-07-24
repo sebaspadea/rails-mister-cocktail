@@ -11,7 +11,11 @@
     <% @cocktails.each do |cocktail| %>
       <div class="col-md-3 my-3">
         <div class="card">
+        <% if cocktail.photo.attached? %>
           <%= cl_image_tag cocktail.photo.key, class: "img-fluid imagen-card", crop: :fill %>
+        <% else %>
+          <%= image_tag "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_9SJWfF9klDspgw7Q0B4wRGHTPS8FNvHG8w&usqp=CAU", class: "img-fluid imagen-card", crop: :fill  %>
+        <% end %>
         </div>
         <div class="card-footer">
         <h3>

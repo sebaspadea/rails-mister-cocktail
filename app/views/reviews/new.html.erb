@@ -1,0 +1,7 @@
+<div class="container form-blanquito">
+<%= simple_form_for [ @cocktail, @review] do |t| %>
+  <%= t.input :content %>
+  <%= t.input :rating %>
+  <%= t.submit class: "btn btn-primary" %>
+<% end %>
+</div>
