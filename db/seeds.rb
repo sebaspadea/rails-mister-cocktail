@@ -8,13 +8,9 @@
 # require "open-uri"
 
 
-# url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
-# user_serialized = open(url).read
-# word_json = JSON.parse(user_serialized)
-# word_json['drinks'].each do |drink|
-#   Ingredient.create(name: drink['strIngredient1'])
-# end
-
-negroni = Cocktail.create(name: "Negroni")
-cuba_libre = Cocktail.create(name: "Cuba Libre")
-daikiri = Cocktail.create(name: "Daikiri")
+url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
+user_serialized = open(url).read
+word_json = JSON.parse(user_serialized)
+word_json['drinks'].each do |drink|
+  Ingredient.create(name: drink['strIngredient1'])
+end
