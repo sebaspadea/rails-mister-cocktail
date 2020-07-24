@@ -8,9 +8,9 @@
           <%= image_tag "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_9SJWfF9klDspgw7Q0B4wRGHTPS8FNvHG8w&usqp=CAU", class: "img-fluid imagen-show", crop: :fill  %>
         <% end %>
 <div class="d-flex justify-content-between">
-<%= link_to "Delete Cocktail", cocktail_path(@cocktail), class: "btn btn-outline-danger my-2", method: :delete, data: { confirm: "Are you sure?"} %>
-<%= link_to "New Dose", new_cocktail_dose_path(@cocktail), class: "btn btn-outline-primary my-2"%>
-<%= link_to 'New Review', new_cocktail_review_path(@cocktail), class: "btn btn-outline-warning my-2" %>
+<%= link_to "Delete Cocktail", cocktail_path(@cocktail), class: "btn btn-outline-danger m-2", method: :delete, data: { confirm: "Are you sure?"} %>
+<%= link_to "New Dose", new_cocktail_dose_path(@cocktail), class: "btn btn-outline-primary m-2"%>
+<%= link_to 'New Review', new_cocktail_review_path(@cocktail), class: "btn btn-outline-warning m-2" %>
 </div>
 </div>
 <div class="col-md-6">
